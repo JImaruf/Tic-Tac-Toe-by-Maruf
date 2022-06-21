@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#073009"
+    android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#00F4511E"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIC TAC TOE"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:padding="10dp"
+
+            android:layout_marginBottom="90dp"
+            android:textColor="@color/white"
+            android:background="#DD2C00"/>
+
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:background="#18322F"
+
+            android:rowCount="3"
+            >
+
+            <Button
+                android:onClick="getData"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:textSize="22sp"
+
+                android:id="@+id/bt1"
+
+                android:layout_height="70dp"
+
+
+                android:backgroundTint="#FF5722"
+                android:layout_margin="5dp" />
+
+
+            <Button
+                android:onClick="getData"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:textSize="22sp"
+                android:id="@+id/bt2"
+                android:layout_height="70dp"
+
+                android:backgroundTint="#FF5722"
+
+                android:layout_margin="5dp"/>
+            <Button
+                android:onClick="getData"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:textSize="22sp"
+                android:id="@+id/bt3"
+                android:layout_height="70dp"
+
+                android:backgroundTint="#FF5722"
+                android:layout_margin="5dp"/>
+            <Button
+                android:onClick="getData"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:textSize="22sp"
+                android:id="@+id/bt4"
+                android:layout_height="70dp"
+
+                android:backgroundTint="#FF5722"
+                android:layout_margin="5dp"/>
+            <Button
+                android:onClick="getData"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:textSize="22sp"
+                android:id="@+id/bt5"
+                android:layout_height="70dp"
+
+                android:backgroundTint="#FF5722"
+                android:layout_margin="5dp"/>
+            <Button
+                android:onClick="getData"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:textSize="22sp"
+                android:id="@+id/bt6"
+                android:layout_height="70dp"
+
+                android:backgroundTint="#FF5722"
+                android:layout_margin="5dp"/>
+            <Button
+                android:onClick="getData"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:textSize="22sp"
+                android:id="@+id/bt7"
+                android:layout_height="70dp"
+
+                android:backgroundTint="#FF5722"
+                android:layout_margin="5dp"/>
+            <Button
+                android:onClick="getData"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:textSize="22sp"
+                android:id="@+id/bt8"
+                android:layout_height="70dp"
+
+                android:backgroundTint="#FF5722"
+                android:layout_margin="5dp"/>
+            <Button
+                android:onClick="getData"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:textSize="22sp"
+                android:id="@+id/bt9"
+                android:layout_height="70dp"
+
+                android:backgroundTint="#FF5722"
+                android:layout_margin="5dp"/>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:weightSum="3"
+        >
+
+        <TextView
+            android:id="@+id/xTurns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X Turns"
+            android:layout_weight="1"
+
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            android:padding="5dp"
+
+
+
+            android:textColor="@color/white"
+            android:background="#64DD17"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/oTurns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O Turns"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+
+
+
+
+            android:textColor="@color/white"
+            android:background="#FFD600"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:backgroundTint="#43A047"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="playAgain"
+        android:text="Re-Play"
+        android:layout_marginTop="40dp"
+        />
+</LinearLayout>
+
